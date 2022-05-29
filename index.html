@@ -19,17 +19,19 @@
     <!-- Pantalla de seleccion de "coches" -->
     <section class="pantalla" id="seleccion" style="display: none">
         <div class="cabeza">
-            <h1>Selecciona un Piloto</h1>
+            <div><h1>Selecciona un Piloto</h1></div>
         </div>
         <div class="pilotos">
-            <div class="piloto1"></div>
-            <div class="piloto2"></div>
+            <div class="vainas" id="piloto1" onclick="elegirPiloto()"></div>
+            <div class="vainas" id="piloto2" onclick="elegirPiloto()"></div>
+            <div class="vainas" id="piloto3" onclick="elegirPiloto()"></div>
+            <div class="vainas" id="piloto4" onclick="elegirPiloto()"></div>
         </div>
     </section>
     <!-- Pantalla de la carrera -->
     <section class="pantalla" id="carrera" style="display: none">
         <div class="cabeza">
-            <h1>¡Comienza la Carrera!</h1>
+            <div><h1>¡Comienza la Carrera!</h1></div>
         </div>
         <div class="central">
             <div class="meta">
@@ -38,9 +40,11 @@
             <div class="pista">
                 <div id="piloto1"></div>
                 <div id="piloto2"></div>
+                <div id="piloto3"></div>
+                <div id="piloto4"></div>
             </div>
             <div class="acelera">
-                <h2>¡Acelera!</h2>
+                <div><h2>¡Acelera!</h2></div>
             </div>
         </div>
     </section>

@@ -31,10 +31,58 @@ body {
 
 #seleccion {
     display: flex;
+    flex-direction: column;
     background-image: url("../img/seleccionVaina.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.cabeza{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+    padding: 2%;
+}
+
+.pilotos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+    grid-gap: 5em;
+    margin-left: 20em;
+}
+
+.vainas{
+    height: 20em;
+    width: 20em;
+    margin: 2%;
+    padding: 2%;
+}
+
+#piloto1{
+    background-image: url("../img/anakin.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#piloto2{
+    background-image: url("../img/sebulba.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#piloto3{
+    background-image: url("../img/aldar.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#piloto4{
+    background-image: url("../img/mars.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 
 #carrera {
     display: flex;
