@@ -29,6 +29,8 @@ body {
     background-size: cover;
 }
 
+/*----------------------Pantalla de seleccion ----------------------------*/
+
 #seleccion {
     display: flex;
     flex-direction: column;
@@ -37,63 +39,186 @@ body {
     background-size: cover;
 }
 
-.cabeza{
+.cabeza {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 2%;
     padding: 2%;
+    background-color: rgba(186, 186, 186, 0.501);
 }
 
-.pilotos{
+.pilotos {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);  
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 5em;
     margin-left: 20em;
+
 }
 
-.vainas{
+.vainas {
     height: 20em;
-    width: 20em;
-    margin: 2%;
-    padding: 2%;
+    width: 25em;
 }
 
-#piloto1{
+#piloto1 {
     background-image: url("../img/anakin.jpg");
     background-repeat: no-repeat;
     background-size: contain;
 }
 
-#piloto2{
+#piloto2 {
     background-image: url("../img/sebulba.jpg");
     background-repeat: no-repeat;
     background-size: contain;
 }
 
-#piloto3{
+#piloto3 {
     background-image: url("../img/aldar.jpeg");
     background-repeat: no-repeat;
     background-size: contain;
 }
 
-#piloto4{
+#piloto4 {
     background-image: url("../img/mars.jpeg");
     background-repeat: no-repeat;
     background-size: contain;
 }
 
+.vainas:hover {
+    cursor: pointer;
+    width: 20em;
+    transition: 0.2s;
+}
+
+/*------------------------- Pantalla de Carrera -------------------------*/
 
 #carrera {
     display: flex;
+    align-items: center;
+    flex-direction: column;
     background-image: url("../img/carrera.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+.central {
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;    
+    height: 70%;
+    width: 85%;
+    background-color: rgba(186, 186, 186, 0.501);
+    border-radius: 1em;
+}
+
+.pista{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-evenly;
+
+}
+
+.meta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+    width: 5em;
+    margin: 1%;
+    background-color: rgba(82, 82, 82, 0.669);
+    border-radius: 1em;
+}
+
+/*-------------------------- Coches en Pista -----------------------------*/
+
+.piloto1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4em;
+    width: 8em;
+    background-color: rgba(56, 152, 255, 0.75);
+    border-radius: 1em;
+    margin: 10%;
+}
+
+.piloto2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4em;
+    width: 8em;
+    background-color: rgba(255, 109, 56, 0.75);
+    border-radius: 1em;
+    margin: 10%;
+}
+
+.piloto3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4em;
+    width: 8em;
+    background-color: rgba(235, 255, 56, 0.75);
+    border-radius: 1em;
+    margin: 10%;
+}
+
+.piloto4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4em;
+    width: 8em;
+    background-color: rgba(89, 255, 56, 0.75);
+    border-radius: 1em;
+    margin: 10%;
+}
+
+.acelera {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15em;
+    margin: 2%;
+    padding: 2%;
+    background-color: rgba(172, 104, 255, 0.7);
+    border-radius: 1em;
+}
+
+/*------------------------ Pantalla del Final ----------------------------*/
+
 #final {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     background-image: url("../img/final.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.resultado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 60%;
+    border-color: black;
+    margin: 4%;
+    background-color: rgba(255, 151, 151, 0.446);
+}
+
+.reinicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    width: 20%;
+    margin: 4%;
+    border-radius: 1em;
+    background-color: rgba(255, 56, 192, 0.36);
 }

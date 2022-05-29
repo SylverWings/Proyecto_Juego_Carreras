@@ -10,25 +10,25 @@
 </head>
 
 <body>
-    <!-- Pantalla de inicio -->
+    <!-- ----------------------Pantalla de inicio --------------------------->
     <section class="pantalla" id="inicio">
         <div class="start" onclick="cambiar('seleccion')">
             <h1>Press to Start</h1>
         </div>
     </section>
-    <!-- Pantalla de seleccion de "coches" -->
+    <!----------------- Pantalla de seleccion de "coches" ------------------->
     <section class="pantalla" id="seleccion" style="display: none">
         <div class="cabeza">
             <div><h1>Selecciona un Piloto</h1></div>
         </div>
         <div class="pilotos">
-            <div class="vainas" id="piloto1" onclick="elegirPiloto()"></div>
-            <div class="vainas" id="piloto2" onclick="elegirPiloto()"></div>
-            <div class="vainas" id="piloto3" onclick="elegirPiloto()"></div>
-            <div class="vainas" id="piloto4" onclick="elegirPiloto()"></div>
+            <div class="vainas" id="piloto1" onclick="elegirPiloto(anakin)"></div>
+            <div class="vainas" id="piloto2" onclick="elegirPiloto(sebulba)"></div>
+            <div class="vainas" id="piloto3" onclick="elegirPiloto(aldar)"></div>
+            <div class="vainas" id="piloto4" onclick="elegirPiloto(mars)"></div>
         </div>
     </section>
-    <!-- Pantalla de la carrera -->
+    <!-- ---------------------Pantalla de la carrera ------------------------>
     <section class="pantalla" id="carrera" style="display: none">
         <div class="cabeza">
             <div><h1>¡Comienza la Carrera!</h1></div>
@@ -38,24 +38,24 @@
                 <h2>META</h2>
             </div>
             <div class="pista">
-                <div id="piloto1"></div>
-                <div id="piloto2"></div>
-                <div id="piloto3"></div>
-                <div id="piloto4"></div>
+                <div class="piloto1"><h3><strong>Anakin</strong></h3></div>
+                <div class="piloto2"><h3><strong>Sebulba</strong></h3></div>
+                <div class="piloto3"><h3><strong>Aldar</strong></h3></div>
+                <div class="piloto4"><h3><strong>Mars</strong></h3></div>
             </div>
-            <div class="acelera">
-                <div><h2>¡Acelera!</h2></div>
-            </div>
+        </div>
+        <div class="acelera" onclick="acelerar ()">
+            <div><h2>¡Acelera!</h2></div>
         </div>
     </section>
-    <!-- Pantalla del resultado -->
+    <!------------------------ Pantalla del resultado ------------------------>
     <section class="pantalla" id="final" style="display: none">
         <div class="resultado">
-            <h1>¡Enhorabuena<br>has ganado!</h1>
-            <h1>¡Has perdido!</h1>
+            <div id="ganador" style="display: none"><h1>¡Enhorabuena<br>has ganado!</h1></div>
+            <div id="perdedor" style="display: none"><h1>¡Has perdido!</h1></div>
         </div>
-        <div class="reinicio">
-            <h2>Volver a Jugar</h2>
+        <div class="reinicio" onclick="reiniciar()">
+            <div><h2>Volver a Jugar</h2></div>
         </div>
     </section>
     <script src="./Js/Main.js"></script>
