@@ -1,9 +1,51 @@
-
-.pantalla{
-
-    height: 100vh;
+* {
+    margin: 0%;
+    padding: 0%;
 }
 
-#inicio{
+body {
+    display: flex;
     height: 100vh;
+    width: 100vw;
+}
+
+.pantalla {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    height: auto;
+}
+
+.foto {
+    height: auto;
+}
+
+#inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/inico.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#seleccion {
+    display: flex;
+    background-image: url("../img/seleccionVaina.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#carrera {
+    display: flex;
+    background-image: url("../img/carrera.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#final {
+    display: flex;
+    background-image: url("../img/final.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }

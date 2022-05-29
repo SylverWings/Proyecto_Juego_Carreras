@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="./Css/Styles.css">
 </head>
-<body class="d-flex">
-    <div class="pantalla" id="inicio">
-        <div>
+
+<body>
+    <!-- Pantalla de inicio -->
+    <section class="pantalla" id="inicio">
+        <div class="start" onclick="cambiar('seleccion')">
             <h1>Press to Start</h1>
         </div>
-    </div>
-    <div class="pantalla" id="seleccion">
+    </section>
+    <!-- Pantalla de seleccion de "coches" -->
+    <section class="pantalla" id="seleccion" style="display: none">
         <div class="cabeza">
             <h1>Selecciona un Piloto</h1>
         </div>
@@ -21,8 +25,9 @@
             <div class="piloto1"></div>
             <div class="piloto2"></div>
         </div>
-    </div>
-    <div class="pantalla" id="carrera">
+    </section>
+    <!-- Pantalla de la carrera -->
+    <section class="pantalla" id="carrera" style="display: none">
         <div class="cabeza">
             <h1>¡Comienza la Carrera!</h1>
         </div>
@@ -38,8 +43,9 @@
                 <h2>¡Acelera!</h2>
             </div>
         </div>
-    </div>
-    <div class="pantalla" id="final">
+    </section>
+    <!-- Pantalla del resultado -->
+    <section class="pantalla" id="final" style="display: none">
         <div class="resultado">
             <h1>¡Enhorabuena<br>has ganado!</h1>
             <h1>¡Has perdido!</h1>
@@ -47,7 +53,8 @@
         <div class="reinicio">
             <h2>Volver a Jugar</h2>
         </div>
-    </div>
+    </section>
     <script src="./Js/Main.js"></script>
 </body>
+
 </html>
