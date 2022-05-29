@@ -11,10 +11,16 @@ const cambiar = (pantalla) => {
         } 
 }
 
-//------Seleccion del piloto-----------
+//----------------- Seleccion del piloto -----------
+
+let player1 = [];
 
 const elegirPiloto = (pilotoSeleccionado) => {
-    if(player1.length == 1){
-        player1.push()
+    if(player1.length < 1 ){
+        player1.push(pilotoSeleccionado)
     }
+    cambiar("carrera");
+    console.log("funciona");
 }
+
+

@@ -23,10 +23,10 @@
             <div><h1>Selecciona un Piloto</h1></div>
         </div>
         <div class="pilotos">
-            <div class="vainas" id="piloto1" onclick="elegirPiloto(anakin)"></div>
-            <div class="vainas" id="piloto2" onclick="elegirPiloto(sebulba)"></div>
-            <div class="vainas" id="piloto3" onclick="elegirPiloto(aldar)"></div>
-            <div class="vainas" id="piloto4" onclick="elegirPiloto(mars)"></div>
+            <div class="vainas" id="piloto1" onclick="elegirPiloto('anakin')"><!-- <img src="./img/anakin.jpg" alt="">--></div>
+            <div class="vainas" id="piloto2" onclick="elegirPiloto('sebulba')"><!-- <img src="" alt=""> --></div>
+            <div class="vainas" id="piloto3" onclick="elegirPiloto('aldar')"></div>
+            <div class="vainas" id="piloto4" onclick="elegirPiloto('mars')"></div>
         </div>
     </section>
     <!-- ---------------------Pantalla de la carrera ------------------------>
@@ -45,7 +45,7 @@
                 <div class="piloto4"><h3><strong>Mars</strong></h3></div>
             </div>
         </div>
-        <div class="acelera" onclick="acelerar ()">
+        <div class="acelera">
             <div><h2>¡Acelera!</h2></div>
         </div>
     </section>
@@ -60,6 +60,7 @@
         </div>
     </section>
     <script src="./Js/Main.js"></script>
+    <script src="./Js/Objetos.js"></script>
 </body>
 
 </html>
