@@ -9,11 +9,22 @@ body {
     width: 100vw;
 }
 
+/*--------------------------- Pantalla inicio -----------------------------*/
+
 .pantalla {
     height: 100vh;
     width: 100vw;
     display: flex;
     height: auto;
+}
+
+.titulo{
+    background-image: url("../img/titulo.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50%;
+    width: 60%;    
+    margin: 4%;
 }
 
 .foto {
@@ -22,11 +33,19 @@ body {
 
 #inicio {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     background-image: url("../img/inico.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.start{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
 }
 
 /*----------------------Pantalla de seleccion ----------------------------*/
