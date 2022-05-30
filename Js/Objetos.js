@@ -72,7 +72,7 @@ const moveDiv = (div, nombrePiloto) => {
 
     const porcentaje = (nombrePiloto.metrosRecorridos * 100) / 1000;
     let x_pos = document.getElementsByClassName(div);
-    x_pos.style.left = porcentaje + '%';
+    x_pos[0].style.left = porcentaje + '%';
 }
 //---------------------- Instanciar Pilotos ------------------------------//
 
