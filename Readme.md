@@ -19,11 +19,11 @@ Una vez tuve claro el procedimiento, empece a crear el juego. Y este es el resul
 
 <img src="../Img/Inicio.jpg" alt="foto">
 <br>
-<img src="../Img/seleccion.jpg.jpg" alt="foto">
+<img src="../Img/seleccion.jpg." alt="foto">
 <br>
-<img src="../Img/carrera.jpg.jpg" alt="foto">
+<img src="../Img/carrera.jpg." alt="foto">
 <br>
-<img src="../Img/final.jpg.jpg" alt="foto">
+<img src="../Img/final.jpg." alt="foto">
 
 <h1>Herramientas</h1>
 
