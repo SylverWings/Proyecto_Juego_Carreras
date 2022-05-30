@@ -56,6 +56,14 @@ class Circuito {
     }
 
     correr() {
+        
+        const moveDiv = (div, nombrePiloto) => {
+        
+            const porcentaje = (nombrePiloto.metrosRecorridos * 100) / 1000;
+            let x_pos = document.getElementsByClassName(div);
+            x_pos.style.left = porcentaje + '%';
+        }
+
         for (let i = 0; i < this.participantes.length; i++) {
             this.participantes[i].acelerar();
             console.log("acelera");
@@ -64,13 +72,6 @@ class Circuito {
         }
     }
 
-}
-
-const moveDiv = (div, nombrePiloto) => {
-
-    const porcentaje = (nombrePiloto.metrosRecorridos * 100) / 1000;
-    let d = document.getElementsByClassName(div);
-    d.style.left = porcentaje + "px";
 }
 
 //---------------------- Instanciar Pilotos ------------------------------//

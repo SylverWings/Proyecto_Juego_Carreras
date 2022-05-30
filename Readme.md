@@ -7,23 +7,23 @@ cambiara de pantalla para poder seleccionar y competir contra la maquina.
 
 A continuacion, paso el croquis que hice para llevar a cabo el proyecto:
 
-<img src="../Img/Pantalla1.jpg" alt="foto">
+<img class="foto" src="../Img/Pantalla1.jpg" alt="vaina">
 <br>
-<img src="../Img/Pantalla2.jpg" alt="foto">
+<img class="foto" src="../Img/Pantalla2.jpg" alt="vaina">
 <br>
-<img src="../Img/Pantalla3.jpg" alt="foto">
+<img class="foto" src="../Img/Pantalla3.jpg" alt="vaina">
 <br>
-<img src="../Img/Pantalla4.jpg" alt="foto">
+<img class="foto" src="../Img/Pantalla4.jpg" alt="vaina">
 
 Una vez tuve claro el procedimiento, empece a crear el juego. Y este es el resultado:
 
-<img src="../Img/Inicio.jpg" alt="foto">
+<img class="foto" src="../Img/Inicio.jpg" alt="vaina">
 <br>
-<img src="../Img/seleccion.jpg." alt="foto">
+<img class="foto" src="../Img/seleccion.jpg." alt="vaina">
 <br>
-<img src="../Img/carrera.jpg." alt="foto">
+<img class="foto" src="../Img/carrera.jpg." alt="vaina">
 <br>
-<img src="../Img/final.jpg." alt="foto">
+<img class="foto" src="../Img/final.jpg." alt="vaina">
 
 <h1>Herramientas</h1>
 
