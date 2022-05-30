@@ -74,7 +74,6 @@ const moveDiv = (div, nombrePiloto) => {
     let x_pos = document.getElementsByClassName(div);
     x_pos.style.left = porcentaje + '%';
 }
-
 //---------------------- Instanciar Pilotos ------------------------------//
 
 let vaina1 = new Pilot("Anakin", 70, 15);

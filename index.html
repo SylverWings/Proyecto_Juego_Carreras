@@ -20,7 +20,9 @@
     <!----------------- Pantalla de seleccion de "coches" ------------------->
     <section class="pantalla" id="seleccion" style="display: none">
         <div class="cabeza">
-            <div><h1>Selecciona un Piloto</h1></div>
+            <div>
+                <h1>Selecciona un Piloto</h1>
+            </div>
         </div>
         <div class="pilotos">
             <div class="vainas" id="piloto1" onclick="elegirPiloto('anakin')"></div>
@@ -32,31 +34,49 @@
     <!-- ---------------------Pantalla de la carrera ------------------------>
     <section class="pantalla" id="carrera" style="display: none">
         <div class="cabeza">
-            <div><h1>¡Comienza la Carrera!</h1></div>
+            <div>
+                <h1>¡Comienza la Carrera!</h1>
+            </div>
         </div>
         <div class="central">
             <div class="meta">
                 <h2>META</h2>
             </div>
             <div class="pista">
-                <div class="Anakin"><h3><strong>Anakin</strong></h3></div>
-                <div class="Sebulba"><h3><strong>Sebulba</strong></h3></div>
-                <div class="Aldar"><h3><strong>Aldar</strong></h3></div>
-                <div class="Mars"><h3><strong>Mars</strong></h3></div>
+                <div class="Anakin">
+                    <h3><strong>Anakin</strong></h3>
+                </div>
+                <div class="Sebulba">
+                    <h3><strong>Sebulba</strong></h3>
+                </div>
+                <div class="Aldar">
+                    <h3><strong>Aldar</strong></h3>
+                </div>
+                <div class="Mars">
+                    <h3><strong>Mars</strong></h3>
+                </div>
             </div>
         </div>
         <button class="acelera">
-            <div><h2>¡Acelera!</h2></div>
+            <div>
+                <h2>¡Acelera!</h2>
+            </div>
         </button>
     </section>
     <!------------------------ Pantalla del resultado ------------------------>
     <section class="pantalla" id="final" style="display: none">
         <div class="resultado">
-            <div id="ganador" style="display: none"><h1>¡Enhorabuena<br>has ganado!</h1></div>
-            <div id="perdedor" style="display: none"><h1>¡Has perdido!</h1></div>
+            <div id="ganador" style="display: none">
+                <h1>¡Enhorabuena<br>has ganado!</h1>
+            </div>
+            <div id="perdedor" style="display: none">
+                <h1>¡Has perdido!</h1>
+            </div>
         </div>
         <button class="reinicio" onclick="reiniciar()">
-            <div><h2>Volver a Jugar</h2></div>
+            <div>
+                <h2>Volver a Jugar</h2>
+            </div>
         </button>
     </section>
     <script src="./Js/Main.js"></script>
