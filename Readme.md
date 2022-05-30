@@ -12,18 +12,18 @@ A continuacion, paso el croquis que hice para llevar a cabo el proyecto:
 <img class="foto" src="../Img/Pantalla2.jpg" alt="vaina2">
 
 <img class="foto" src="../Img/Pantalla3.jpg" alt="vaina3">
-<br>
+
 <img class="foto" src="./Img/Pantalla4.jpg" alt="vaina4">
 
 Una vez tuve claro el procedimiento, empece a crear el juego. Y este es el resultado:
 
 <img class="foto" src="../Img/Inicio.jpg" alt="vaina5">
 
-<img class="foto" src="../Img/seleccion.jpg." alt="vaina6">
+<img class="foto" src="../Img/seleccion.jpg" alt="vaina6">
 
-<img class="foto" src="../Img/carrera.jpg." alt="vaina7">
+<img class="foto" src="../Img/carrera.jpg" alt="vaina7">
 
-<img class="foto" src="../Img/final.jpg." alt="vaina8">
+<img class="foto" src="../Img/final.jpg" alt="vaina8">
 
 <h1>Herramientas</h1>
 
