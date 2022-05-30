@@ -1,5 +1,5 @@
 
-// ------Funcion de cambio de pantalla------
+// ------------------------- Funcion de cambio de pantalla -----------------//
 
 const cambiar = (pantalla) => {
     
@@ -11,7 +11,7 @@ const cambiar = (pantalla) => {
         } 
 }
 
-//----------------- Seleccion del piloto -----------
+//---------------------------- Seleccion del piloto ----------------------------//
 
 let player1 = [];
 
@@ -20,7 +20,15 @@ const elegirPiloto = (pilotoSeleccionado) => {
         player1.push(pilotoSeleccionado)
     }
     cambiar("carrera");
-    console.log("funciona");
+    
 }
 
+//------------------ Reinicio del Juego una vez terminado ------------------------//
+
+const reiniciar = () => {
+
+    window.location.reload();
+  
+cambiar('inicio');
+}
 
