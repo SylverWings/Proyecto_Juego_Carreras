@@ -57,23 +57,23 @@ class Circuito {
 
     correr() {
         
-        const moveDiv = (div, nombrePiloto) => {
         
-            const porcentaje = (nombrePiloto.metrosRecorridos * 100) / 1000;
-            let x_pos = document.getElementsByClassName(div);
-            x_pos.style.left = porcentaje + '%';
-        }
-
         for (let i = 0; i < this.participantes.length; i++) {
             this.participantes[i].acelerar();
             console.log("acelera");
             moveDiv(this.participantes[i].nombre, this.participantes[i]);
-
+            
         }
     }
-
+    
 }
 
+const moveDiv = (div, nombrePiloto) => {
+
+    const porcentaje = (nombrePiloto.metrosRecorridos * 100) / 1000;
+    let x_pos = document.getElementsByClassName(div);
+    x_pos.style.left = porcentaje + '%';
+}
 //---------------------- Instanciar Pilotos ------------------------------//
 
 let vaina1 = new Pilot("Anakin", 70, 15);
