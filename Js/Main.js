@@ -19,7 +19,7 @@ const elegirPiloto = (pilotoSeleccionado) => {
     if(player1.length < 1 ){
         player1.push(pilotoSeleccionado)
     }
-    cambiar("carrera");
+    cambiar("carrera");   
     
 }
 

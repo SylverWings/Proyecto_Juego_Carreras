@@ -1,3 +1,6 @@
+
+
+
 //----------------------- Declaracion de la Clase Piloto ----------------//
 
 class Pilot {
@@ -28,64 +31,55 @@ class Circuito {
         this.nombre = nombre,
             this.metrosTotales = metrosTotales,
             this.participantes = participantes;
-    }
-
-    //--------------- Funsion de quien llega primero ----------------------//
-
-    ganadorCarrera() {
-        if (this.metrosRecorridos >= this.metrosTotales) {
-            console.log("Carrera finalizada");
-            cambiar('final');
+    } 
+    
+            
+  //---------------------------- Funsion de quien llega primero ------------------------------//
+    meta(ganador){
+        let mensaje = document.getElementById("res");        
+        if(player1[0] == ganador.nombre){
+            mensaje.textContent = "Enhorabuena! Has ganado la carrera!!";
+        }else{
+            mensaje.textContent = `Has perdido la carrera... El ganador ha sido ${ganador.nombre}`;
         }
- //----------------- Resultado de la Carrera ------------------------------------//
-
-        const resultado = () => {
-
-            switch (pilotoSeleccionado) {
-                case ganadorCarrera:
-                    document.querySelector("#ganador").display = flex;
-                    break;
-
-                default:
-                    document.querySelector("#perdedor").display = flex;
-                    break;
-            }
-        }
-
-        resultado();
+        cambiar("final") 
     }
-
+    
     correr() {
-        
+        const divMeta = document.getElementById("meta")
+        const posicion = divMeta.getBoundingClientRect()
+        const divMetaX = posicion.left
         
         for (let i = 0; i < this.participantes.length; i++) {
             this.participantes[i].acelerar();
-            console.log("acelera");
-            moveDiv(this.participantes[i].nombre, this.participantes[i]);
-            
-        }
-    }
-    
+            moveDiv(this.participantes[i].nombre, this.participantes[i], this.metrosTotales);
+            let corredor = document.getElementById(this.participantes[i].nombre)
+            let posicionCorredor = corredor.getBoundingClientRect();
+            let corredorX = posicionCorredor.left                           
+            if(corredorX + corredor.offsetWidth >= divMetaX){                             
+                this.meta(this.participantes[i]);                    
+            }                
+        }        
+    }    
 }
 
-const moveDiv = (div, nombrePiloto) => {
-
-    const porcentaje = (nombrePiloto.metrosRecorridos * 100) / 1000;
-    let x_pos = document.getElementsByClassName(div);
-    x_pos[0].style.left = porcentaje + '%';
+const moveDiv = (div, piloto, metrosCarrera) => {
+    const porcentaje = (piloto.metrosRecorridos * 100) / metrosCarrera;
+    let divCorredor = document.getElementById(div);
+    divCorredor.style.left = porcentaje + '%';
 }
 //---------------------- Instanciar Pilotos ------------------------------//
 
-let vaina1 = new Pilot("Anakin", 70, 15);
-let vaina2 = new Pilot("Sebulba", 70, 15);
-let vaina3 = new Pilot("Aldar", 80, 10);
-let vaina4 = new Pilot("Mars", 60, 20);
+let vaina1 = new Pilot("Anakin", 80, 5);
+let vaina2 = new Pilot("Sebulba", 75, 10);
+let vaina3 = new Pilot("Aldar", 70, 15);
+let vaina4 = new Pilot("Mars", 75, 10);
 
 let allVainas = [vaina1, vaina2, vaina3, vaina4];
 
 //-------------------- Instanciar Circuito -----------------------------//
 
-let circuito = new Circuito("Tatooine", 1000, allVainas);
+let circuito = new Circuito("Tatooine", 150, allVainas);
 
 document.querySelector(".acelera").addEventListener('click', function (event) {
     circuito.correr();

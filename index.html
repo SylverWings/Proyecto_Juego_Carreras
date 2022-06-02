@@ -25,10 +25,10 @@
             </div>
         </div>
         <div class="pilotos">
-            <div class="vainas" id="piloto1" onclick="elegirPiloto('anakin')"></div>
-            <div class="vainas" id="piloto2" onclick="elegirPiloto('sebulba')"></div>
-            <div class="vainas" id="piloto3" onclick="elegirPiloto('aldar')"></div>
-            <div class="vainas" id="piloto4" onclick="elegirPiloto('mars')"></div>
+            <div class="vainas" id="piloto1" onclick="elegirPiloto('Anakin')"></div>
+            <div class="vainas" id="piloto2" onclick="elegirPiloto('Sebulba')"></div>
+            <div class="vainas" id="piloto3" onclick="elegirPiloto('Aldar')"></div>
+            <div class="vainas" id="piloto4" onclick="elegirPiloto('Mars')"></div>
         </div>
     </section>
     <!-- ---------------------Pantalla de la carrera ------------------------>
@@ -39,20 +39,20 @@
             </div>
         </div>
         <div class="central">
-            <div class="meta">
+            <div id="meta">
                 <h2>META</h2>
             </div>
             <div class="pista">
-                <div class="Anakin">
+                <div id="Anakin">
                     <h3><strong>Anakin</strong></h3>
                 </div>
-                <div class="Sebulba">
+                <div id="Sebulba">
                     <h3><strong>Sebulba</strong></h3>
                 </div>
-                <div class="Aldar">
+                <div id="Aldar">
                     <h3><strong>Aldar</strong></h3>
                 </div>
-                <div class="Mars">
+                <div id="Mars">
                     <h3><strong>Mars</strong></h3>
                 </div>
             </div>
@@ -66,12 +66,7 @@
     <!------------------------ Pantalla del resultado ------------------------>
     <section class="pantalla" id="final" style="display: none">
         <div class="resultado">
-            <div id="ganador" style="display: none">
-                <h1>¡Enhorabuena<br>has ganado!</h1>
-            </div>
-            <div id="perdedor" style="display: none">
-                <h1>¡Has perdido!</h1>
-            </div>
+            <h1 id="res"></h1>                      
         </div>
         <button class="reinicio" onclick="reiniciar()">
             <div>
